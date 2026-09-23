@@ -16,11 +16,9 @@ fi
 
 echo "Installing to: $INSTALL_DIR/tosho-cli"
 
-# 2. Download the script (Assuming it's hosted on GitHub)
-# Note: You'll need to change YOUR_USERNAME to your actual GitHub username
+# 2. Download the script
 REPO_URL="https://raw.githubusercontent.com/ankit-tumu/tosho-cli/main/tosho-cli"
 
-# For local testing before you push to GitHub, we'll just copy it if we're in the same folder
 if [ -f "./tosho-cli" ]; then
     cp "./tosho-cli" "$INSTALL_DIR/tosho-cli"
 else

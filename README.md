@@ -33,7 +33,7 @@ Search anime on AniList, resolve seasons via AniMap/AniDB mappings, discover rel
 ## Installation
 
 ### One-Line Install
-If you're hosting this on GitHub, users can install it instantly (no `sudo` required, installs to `~/.local/bin`):
+Install instantly without `sudo` (installs to `~/.local/bin`):
 ```bash
 curl -sSL https://raw.githubusercontent.com/ankit-tumu/tosho-cli/main/install.sh | bash
 ```
