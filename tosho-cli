@@ -38,15 +38,6 @@ SELF="$(readlink -f "$0" 2>/dev/null || realpath "$0" 2>/dev/null || echo "$0")"
 # === CONFIGURATION & DEFAULTS ==============================================
 CONFIG_ROOT="${XDG_CONFIG_HOME:-$HOME/.config}"
 CONFIG_FILE="$CONFIG_ROOT/tosho-cli/config"
-LEGACY_CONFIG_FILE="$CONFIG_ROOT/tosho-ani/config"
-
-# One-time migration from the old project name. This preserves the user's
-# existing TorBox key/config when upgrading from tosho-ani.
-if [ ! -f "$CONFIG_FILE" ] && [ -f "$LEGACY_CONFIG_FILE" ]; then
-    mkdir -p "$(dirname "$CONFIG_FILE")"
-    cp "$LEGACY_CONFIG_FILE" "$CONFIG_FILE"
-    chmod 600 "$CONFIG_FILE" 2>/dev/null || true
-fi
 
 # Safe config parser: only accepts KEY=VALUE lines with whitelisted keys.
 # No arbitrary code execution unlike the previous `source` approach.
