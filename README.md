@@ -8,14 +8,6 @@ A Linux CLI anime streaming tool.
 
 Search anime on AniList, resolve seasons via AniMap/AniDB mappings, discover releases on AnimeTosho, and stream through TorBox + mpv. Supports Syncplay for synchronized group watching.
 
-## Features
-
-- **Season-Safe Matching**: Queries AnimeTosho directly by AniDB AID/EID resolved via AniMap, preventing multi-season contamination.
-- **TorBox Cache Pre-Checking**: Instantly checks torrent hashes against the TorBox cache for immediate playback.
-- **Batch Episode Extraction**: Seamlessly extracts and plays individual episodes from multi-episode batch releases.
-- **Interactive UI**: Fast, interactive terminal interface powered by `fzf` for searching and release selection.
-- **mpv IPC Playback Controller**: Built-in playback controller supporting next, previous, replay, and episode selection navigation.
-- **Syncplay Integration**: Group watching support via Syncplay rooms.
 
 ## Dependencies
 
